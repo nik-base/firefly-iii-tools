@@ -1,0 +1,6 @@
+{
+    "npmName": "ngx-firefly-iii-api-client",
+    "ngVersion": "17.3.0",
+    "supportsES6": true,
+    "configurationPrefix": "Http"
+}

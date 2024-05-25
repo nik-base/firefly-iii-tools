@@ -1,0 +1,60 @@
+{
+  "name": "@nikhil-patil/ngx-firefly-iii-api-client",
+  "displayName": "Angular Firefly III API Client",
+  "version": "1.0.1",
+  "description": "OpenAPI client for ngx-firefly-iii-api-client",
+  "publisher": "nikhil-patil",
+  "license": "MIT",
+  "author": {
+      "name": "Nikhil Patil",
+      "url": "https://github.com/nik-base"
+  },
+  "repository": {
+    "url": "https://github.com/nik-base/firefly-iii-tools",
+    "type": "git"
+  },
+  "homepage": "https://github.com/nik-base/firefly-iii-tools/libs/ngx-firefly-iii-api-client#readme",
+  "bugs": {
+      "url": "https://github.com/nik-base/firefly-iii-tools/issues",
+      "email": "nikhil.patil.3632@gmail.com"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "generate-client": "openapi-generator-cli generate -i firefly-iii-api-spec.yaml -g typescript-angular -o src -c ./openapi-generator-config.json",
+    "fetch-spec": "curl -o firefly-iii-api-spec.yaml https://raw.githubusercontent.com/firefly-iii/api-docs/main/firefly-iii-2.1.0-v1.yaml",
+    "generate": "npm run fetch-spec && npm run generate-client",
+    "build": "nx run ngx-firefly-iii-api-client:build --configuration=production",
+    "ng-build": "ng-packagr -p ng-package.json",
+    "create": "npm run generate && npm run build"
+  },
+  "keywords": [
+    "openapi-client",
+    "openapi-generator",
+    "Angular Firefly",
+    "Angular firefly-iii",
+    "OpenAPI",
+    "firefly-iii",
+    "typescript",
+    "Firefly API",
+    "Firefly SDK",
+    "angular"
+  ],
+  "peerDependencies": {
+    "@angular/core": "^17.3.0",
+    "rxjs": "^7.4.0"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.13.4",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "ng-packagr": "^17.0.3",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "^7.4.0",
+    "typescript": ">=4.9.3 <5.3.0",
+    "zone.js": "^0.14.0"
+  },
+  "sideEffects": false
+}
