@@ -1,7 +1,7 @@
 {
   "name": "@nikhil-patil/ngx-firefly-iii-api-client",
   "displayName": "Angular Firefly III API Client",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "OpenAPI client for ngx-firefly-iii-api-client",
   "publisher": "nikhil-patil",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "url": "https://github.com/nik-base/firefly-iii-tools",
     "type": "git"
   },
-  "homepage": "https://github.com/nik-base/firefly-iii-tools/libs/ngx-firefly-iii-api-client#readme",
+  "homepage": "https://github.com/nik-base/firefly-iii-tools/tree/master/libs/ngx-firefly-iii-api-client#readme",
   "bugs": {
       "url": "https://github.com/nik-base/firefly-iii-tools/issues",
       "email": "nikhil.patil.3632@gmail.com"
